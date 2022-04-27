@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\LaGroup.accdb" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\img\about-img.jpg" />
     <Content Include="assets\img\apple-touch-icon.png" />
@@ -105,6 +106,7 @@
     <Content Include="assets\vendor\boxicons\fonts\boxicons.svg" />
     <Content Include="La-Group.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
     <Content Include="WelcomePeople.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +118,13 @@
       <DependentUpon>La-Group.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WelcomePeople.aspx.cs">
       <DependentUpon>WelcomePeople.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
