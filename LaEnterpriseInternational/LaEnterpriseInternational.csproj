@@ -103,11 +103,18 @@
     <Content Include="assets\vendor\boxicons\css\boxicons.min.css" />
     <Content Include="assets\vendor\boxicons\css\transformations.css" />
     <Content Include="assets\vendor\boxicons\fonts\boxicons.svg" />
-    <Content Include="assets\vendor\php-email-form\validate.js" />
+    <Content Include="La-Group.aspx" />
     <Content Include="Web.config" />
     <Content Include="WelcomePeople.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="La-Group.aspx.cs">
+      <DependentUpon>La-Group.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="La-Group.aspx.designer.cs">
+      <DependentUpon>La-Group.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WelcomePeople.aspx.cs">
       <DependentUpon>WelcomePeople.aspx</DependentUpon>
@@ -152,6 +159,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

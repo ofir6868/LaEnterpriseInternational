@@ -39,7 +39,7 @@
     <div class="container-fluid">
 
       <div class="logo">
-        <h1><a href="index.html">Siimple</a></h1>
+        <h1><a href="index.html">La-Group International</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -77,16 +77,16 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
-      <h1>Welcome to Siimple</h1>
+      <h1>Welcome to La-Group International</h1>
       <h2>Please, fill out the for below to be notified for the latest updates!</h2>
 
-      <form action="forms/notify.php" method="post" role="form" class="php-email-form">
+      <form runat="server" method="post" role="form" class="php-email-form">
         <div class="row no-gutters">
           <div class="col-md-6 form-group pr-md-1">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+            <input runat="server" type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
           </div>
           <div class="col-md-6 form-group pl-md-1">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+            <input runat="server" type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
           </div>
         </div>
 
@@ -95,7 +95,10 @@
           <div class="error-message"></div>
           <div class="sent-message">Your notification request was sent. Thank you!</div>
         </div>
-        <div class="text-center"><button type="submit">Notify me!</button></div>
+        <div class="text-center">
+            <asp:Button Text="Notify me!" OnClick="buttonSubmit_Click1" ID="buttonSubmit" runat="server">  </asp:Button>
+
+        </div>
       </form>
     </div>
   </section><!-- #hero -->
@@ -137,38 +140,27 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="card">
-              <img src="assets/img/why-us-1.jpg" class="card-img-top" alt="...">
-              <div class="card-icon">
-                <i class="bx bx-book-reader"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Our Mission</a></h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+       
+          <div class="col">
             <div class="card">
               <img src="assets/img/why-us-2.jpg" class="card-img-top" alt="...">
               <div class="card-icon">
                 <i class="bx bx-calendar-edit"></i>
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="">Our Plan</a></h5>
+                <h5 class="card-title"><a href="">La Drive (best site we've ever made)</a></h5>
                 <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="col">
             <div class="card">
               <img src="assets/img/why-us-3.jpg" class="card-img-top" alt="...">
               <div class="card-icon">
                 <i class="bx bx-landscape"></i>
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="">Our Vision</a></h5>
+                <h5 class="card-title"><a href="">La Build (infirior site)</a></h5>
                 <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. </p>
               </div>
             </div>
@@ -335,7 +327,6 @@
 
       <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
