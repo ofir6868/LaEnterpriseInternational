@@ -42,7 +42,7 @@ namespace LaEnterpriseInternational
         {
             Response.Write("hi " + name.Value.ToString()+"!");
 
-            OleDbCommand objCmd = new OleDbCommand("InsertMessage", myConnection);
+            OleDbCommand objCmd = new OleDbCommand("insertSubscriber", myConnection);
             objCmd.CommandType = CommandType.StoredProcedure;
             OleDbParameter objParam;
 
