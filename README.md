@@ -1,5 +1,5 @@
 # Pronin is a Pronin
-# Yoni is an Yoni
+# Yoni is a Yoni
 # Rashman is a Copier
 
 
@@ -121,4 +121,4 @@
 
 
 
-and laBuild is better
+and laDrive is better
