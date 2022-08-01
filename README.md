@@ -1,6 +1,6 @@
 # Pronin is a Pronin
 # Yoni is a Yoni
-# Rashman is a Copier
+# Rashman is a king
 
 
 
