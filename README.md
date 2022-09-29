@@ -1,6 +1,5 @@
 # Pronin is a Pronin
 # Yoni is a Yoni
-# Rashman is a king
 
 
 
@@ -121,4 +120,4 @@
 
 
 
-and laBuild is better
+and laDrive is SO MUCH better
